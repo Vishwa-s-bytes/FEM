@@ -53,9 +53,3 @@ def traction_force(q,psi=None,eta=None):
     f = -q * gauss_quadrature(inside_integral, 1, [-1, 1])
     return f
 
-#usage
-# k = 5
-# xy_coord = [[0,1],[0,0],[2,0.5],[2,1]]
-# print(element_stiffness_matrix(k,xy_coord))
-#
-# print(traction_force(20, psi = -1))
