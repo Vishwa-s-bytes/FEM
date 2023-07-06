@@ -9,7 +9,7 @@ fy = -1e5
 nodes,quad_elem = fc.read_mesh("quad.msh")
 quad_k = fc.k_global(nodes, quad_elem, fc.plane_stress(E,v))
 #For higher meshes use multiprocessing
-# quad_k = gk.k_global_threading(nodes, quad_elem, gk.plane_stress(E,v))
+# quad_k = fc.k_global_threading(nodes, quad_elem, gk.plane_stress(E,v))
 displacement = fc.disp_boundary(nodes,[0,1,6,7,22,23],0)
 force1 = fc.quad_traction_force(nodes,quad_elem[3],[fx,fy],psi=1)
 force2 = fc.quad_traction_force(nodes,quad_elem[4],[fx,fy],psi=1)
