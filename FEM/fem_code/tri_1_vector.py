@@ -76,14 +76,3 @@ def traction_force(nodes, traction_elem, T, side):
     f[[0, 2, 4], 0] = fx
     f[[1, 3, 5], 0] = fy
     return f
-
-#usage
-# xy_coord = np.array([[2,0.5],[2,1],[0,1]])
-# E = 3
-# v = 0.3
-# print(element_stiffness_matrix(plane_stress(E,v),xy_coord))
-#
-# def traction_eqn(x):
-#     y = 1
-#     return y
-# print(traction_force(2,0, [0,2], xy_coord,y=traction_eqn))
