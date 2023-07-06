@@ -47,14 +47,3 @@ def traction(limits,q,xy_coord,y=None, x=None,):
     f = -q * gauss_quadrature(inside_integral,1,limits)
     return f
 
-#usage
-# k = 5
-# xy_coord = np.array([[2,0.5],[2,1],[0,1]])
-#
-# print(element_stiffness_matrix(k,xy_coord))
-#
-# def traction_line(x):
-#     y = 1
-#     return y
-# print(traction([0,2],20,xy_coord,y = traction_line))
-
