@@ -1,6 +1,4 @@
 import meshio
-# import matplotlib.pyplot as plt
-# from . import display as dp
 
 
 
@@ -13,9 +11,3 @@ def read_mesh(file_path):
     else:
         elements = elem_dict["quad"]
     return nodes,elements
-
-#usage
-# nodes,elements = read_mesh("t1.msh","triangle")
-# _,ax = plt.subplots()
-# dp.show(nodes,elements,ax,1)
-# plt.show()
